@@ -18,9 +18,8 @@ import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_TWO;
 @RequiredArgsConstructor
 @Getter
 public class LombokInjectorWithQualifiersConfig {
-
 	@NonNull @Qualifier(DESTINATION_ONE) private final Destination destination1;
 	@NonNull @Qualifier(DESTINATION_TWO) private final Destination destination2;
-    @NonNull @Qualifier(DESTINATION_THREE) private final Destination destination3;
-    @NonNull @Qualifier(DESTINATION_FOUR) private final Destination destination4;
+	@NonNull @Qualifier(DESTINATION_THREE) private final Destination destination3;
+	@NonNull @Qualifier(DESTINATION_FOUR) private final Destination destination4;
 }
