@@ -6,7 +6,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_FOUR;
 import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_ONE;
+import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_THREE;
 import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_TWO;
 
 /**
@@ -37,4 +39,6 @@ import static nyovchev.sprloqua.config.LombokInjectorTestConfig.DESTINATION_TWO;
 public class LombokInjectorTestService {
 	@Qualifier(DESTINATION_ONE) @NonNull private final Destination destination1;
 	@Qualifier(DESTINATION_TWO) @NonNull private final Destination destination2;
+	@Qualifier(DESTINATION_THREE) @NonNull private final Destination destination3;
+	@Qualifier(DESTINATION_FOUR) @NonNull private final Destination destination4;
 }
