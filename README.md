@@ -4,7 +4,7 @@ Small project demonstrating that the constructor injection of @Qualifier beans i
 Check out the test folder where there is a service wired like that:
 
 
-```$Java
+```java
 @Service
 @Getter
 @RequiredArgsConstructor
@@ -19,7 +19,7 @@ public class LombokInjectorTestService {
 Keep in mind that this functionality was introduced in lombok 1.18.4 and it requires placing
 a **lombok.config** file in the root of your dir, looking like that:
 
-```$Java
+```yaml
 # Copy the Qualifier annotation from the instance variables to the constructor
 # see https://github.com/rzwitserloot/lombok/issues/745
 lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Qualifier
