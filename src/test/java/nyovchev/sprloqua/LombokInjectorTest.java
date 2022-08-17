@@ -2,15 +2,15 @@ package nyovchev.sprloqua;
 
 import nyovchev.sprloqua.config.LombokInjectorWithQualifiersConfig;
 import nyovchev.sprloqua.service.LombokInjectorTestService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = LombokInjectorWithQualifiersConfig.class)
 public class LombokInjectorTest {
 
