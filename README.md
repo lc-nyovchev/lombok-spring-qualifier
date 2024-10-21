@@ -1,5 +1,5 @@
 # lombok-spring-qualifier
-Small project demonstrating that the constructor injection of @Qualifier beans is now possible with lombok
+Small project demonstrating that the constructor injection of `@Qualifier` beans is now possible with `lombok`
 
 Check out the test folder where there is a service wired like that:
 
