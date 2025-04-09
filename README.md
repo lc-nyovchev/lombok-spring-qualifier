@@ -32,5 +32,12 @@ lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Quali
 Install SDKMAN!
 ```shell
 curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
 
+Install `java` and run the tests:
+
+```shell
+sdk env install
+./mvnw clean test
 ```

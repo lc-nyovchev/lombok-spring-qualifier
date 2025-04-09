@@ -10,9 +10,10 @@ jobs:
     - name: Install SDKMAN!
       run: |
         curl -s "https://get.sdkman.io" | bash
+        echo "source $HOME/.sdkman/bin/sdkman-init.sh" > $HOME/.bash_env
+        echo "BASH_ENV=$HOME/.bash_env" >> $GITHUB_ENV
 
     - name: Install Java and build with Maven
-      shell: bash
       run: |
         sdk env install
         mvn clean install
