@@ -25,3 +25,12 @@ a **lombok.config** file in the root of your dir, looking like that:
 lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Qualifier
 
 ```
+
+
+# How to install
+
+Install SDKMAN!
+```shell
+curl -s "https://get.sdkman.io" | bash
+
+```
