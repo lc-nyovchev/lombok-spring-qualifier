@@ -27,7 +27,7 @@ lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Quali
 ```
 
 
-# How to install
+# How to install and run the tests
 
 Install SDKMAN!
 ```shell
