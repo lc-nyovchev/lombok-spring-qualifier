@@ -29,11 +29,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Install Java
-      uses: sdkman/sdkman-action@v1
+    - name: Install SDKMAN!
+      run: |
+        curl -s "https://get.sdkman.io?rcupdate=false" | bash
+        echo "source $HOME/.sdkman/bin/sdkman-init.sh" > $HOME/.bash_env
+        echo "BASH_ENV=$HOME/.bash_env" >> $GITHUB_ENV
 
-    - name: Build with Maven
-      run: mvn clean install
+    - name: Install Java and build with Maven
+      run: |
+        sdk env install
+        mvn clean install
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
