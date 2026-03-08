@@ -14,17 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
       with:
         fetch-depth: 2
 
     - name: Initialize CodeQL
+<<<<<<< HEAD
       uses: github/codeql-action/init@v3
+=======
+      uses: github/codeql-action/init@v2
+>>>>>>> 42a1264 (chore: Bump jdk to 25, maven deps/plugins and gh actions)
       with:
          languages: java
 
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v6
 
     - name: Install SDKMAN!
       run: |
@@ -38,4 +42,8 @@ jobs:
         mvn clean install
 
     - name: Perform CodeQL Analysis
+<<<<<<< HEAD
       uses: github/codeql-action/analyze@v3
+=======
+      uses: github/codeql-action/analyze@v2
+>>>>>>> 42a1264 (chore: Bump jdk to 25, maven deps/plugins and gh actions)

@@ -1,10 +1,4 @@
 package nyovchev.sprloqua.service;
 
-import lombok.Value;
-
-@Value
-public class Destination {
-
-	private String physicalDestination;
-
+public record Destination(String physicalDestination) {
 }

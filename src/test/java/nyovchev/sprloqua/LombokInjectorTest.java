@@ -19,17 +19,17 @@ public class LombokInjectorTest {
 
 	@Test
 	public void testProperQualifierInjectionForService() {
-		assertEquals("panama", lombokInjectorTestService.getDestination1().getPhysicalDestination());
-		assertEquals("new zealand", lombokInjectorTestService.getDestination2().getPhysicalDestination());
-		assertEquals("japan", lombokInjectorTestService.getDestination3().getPhysicalDestination());
-		assertEquals("scotland", lombokInjectorTestService.getDestination4().getPhysicalDestination());
+		assertEquals("panama", lombokInjectorTestService.getDestination1().physicalDestination());
+		assertEquals("new zealand", lombokInjectorTestService.getDestination2().physicalDestination());
+		assertEquals("japan", lombokInjectorTestService.getDestination3().physicalDestination());
+		assertEquals("scotland", lombokInjectorTestService.getDestination4().physicalDestination());
 	}
 
 	@Test
 	public void testProperQualifierInjectionForConfiguration() {
-		assertEquals("panama", parentConfig.getDestination1().getPhysicalDestination());
-		assertEquals("new zealand", parentConfig.getDestination2().getPhysicalDestination());
-		assertEquals("japan", parentConfig.getDestination3().getPhysicalDestination());
-		assertEquals("scotland", parentConfig.getDestination4().getPhysicalDestination());
+		assertEquals("panama", parentConfig.getDestination1().physicalDestination());
+		assertEquals("new zealand", parentConfig.getDestination2().physicalDestination());
+		assertEquals("japan", parentConfig.getDestination3().physicalDestination());
+		assertEquals("scotland", parentConfig.getDestination4().physicalDestination());
 	}
 }
